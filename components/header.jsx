@@ -16,16 +16,20 @@ function Header() {
                     </Link>
                 </div>
                 <div className="about mx-4 lg:mx-6 hover:text-gray-400">
-                    <Link href="/about.js">
+                    <Link href="/about">
                         <BsFillInfoCircleFill className="text-2xl sm:hidden" />
                         <p className="hidden sm:inline text-2xl my-2">About</p>
                     </Link>
                 </div>
             </div >
-            <div className="darkmode mx-4 lg:mx-6">
-                <DarkMode />
+            <div className='flex my-4 items-center'>
+                <div className="dark-mode mx-4 lg:mx-6 text-2xl">
+                    <DarkMode />
+                </div>
+                <div className="moviehunt mx-4 lg:mx-6 text-2xl p-2 bg-yellow-400 dark:bg-gray-900 dark:text-yellow-400">
+                    MovieHunt
+                </div>
             </div>
-
         </div >
     )
 }
