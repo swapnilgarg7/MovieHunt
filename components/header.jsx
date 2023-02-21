@@ -6,7 +6,7 @@ import DarkMode from './DarkMode'
 
 function Header() {
     return (
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between '>
             <div className='flex my-4'>
 
                 <div className="home mx-4 lg:mx-6 hover:text-gray-400">
