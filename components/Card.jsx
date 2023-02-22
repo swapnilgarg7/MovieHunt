@@ -9,12 +9,12 @@ function Card({ result }) {
         <div className="group cursor-pointer rounded-lg border border-slate-600 m-2 p-3 shadow-md sm:hover:shadow-slate-800 transition-shadow duration:200">
 
             <Link href={`/movie/${result.id}`}>
-                <div className="title p-2 text-xl font-semibold">
+                <div className="title p-1 text-xl font-semibold line-clamp-1">
                     <p>{result.title || result.name}</p>
                 </div>
                 <Image src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
                     alt={result.title}
-                    className="rounded-lg group-hover:opacity-80 transition-opacity duration-200"
+                    className="rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
                     width={500}
                     height={300}
                     placeholder="blur"
