@@ -26,7 +26,7 @@ async function MoviePage({ params }) {
                 </Image>
 
                 <div className='movie-info p-2 content-center space-y-2 '>
-                    <div className='flex items-center justify-between'>
+                    <div className='md:flex items-center justify-between'>
                         <h1 className='text-3xl font-bold mb-3'>{movie.title || movie.name}</h1>
                         <p className=''> <span className="font-bold">Runtime:</span> {movie.runtime} minutes</p>
                     </div>
