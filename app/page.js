@@ -1,5 +1,6 @@
 import Results from '@/components/Results';
-import Image from 'next/image'
+
+export const dynamic = "force-dynamic";
 
 const API_KEY = process.env.API_KEY
 
