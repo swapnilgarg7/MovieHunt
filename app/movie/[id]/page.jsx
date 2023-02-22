@@ -32,7 +32,7 @@ async function MoviePage({ params }) {
                     </div>
 
                     <p className='text-xl'> <span className="font-bold">Overview:</span> {movie.overview}</p>
-                    <p className='text-xl'> <span className="font-bold">Genres:</span> {movie.genres.map((genre) => (
+                    <p className='text-xl'> <span className="font-bold">Genres:</span> {movie?.genres?.map((genre) => (
                         <span key={genre.id} > {genre.name}   </span>
                     ))}</p>
                     <p className='text-xl'><span className="font-bold">Release Date:</span> {movie.release_date}</p>
