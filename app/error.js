@@ -12,7 +12,7 @@ export default function Error({ error, reset }) {
         <div className="error text-center mt-10 text-2xl space-y-4">
             <h1>Oops! Something went wrong.</h1>
             <button className="hover:text-yellow-500 bg-slate-300 dark:bg-gray-500 p-4" onClick={() => reset()}>
-                Try Again
+                Click Here to Try Again
             </button>
         </div>
     );
