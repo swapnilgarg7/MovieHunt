@@ -12,7 +12,7 @@ function Card({ result }) {
                 <div className="title p-1 text-xl font-semibold line-clamp-1">
                     <p>{result.title || result.name}</p>
                 </div>
-                <Image src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
+                <img src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
                     alt={result.title}
                     className="rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
                     width={500}
@@ -24,7 +24,7 @@ function Card({ result }) {
                         height: 'auto',
                     }}
                 >
-                </Image>
+                </img>
                 <div className="description p-2">
                     <p className="line-clamp-2 mb-4 text-md">{result.overview}</p>
                     <p className='flex justify-between'>{result.release_date || result.first_air_date}

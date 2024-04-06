@@ -11,7 +11,7 @@ async function MoviePage({ params }) {
         <div className='w-full'>
             <div className='flex flex-col md:flex-row p-4 md:pt-8 items-center content-center space-x-4 max-w-7xl mx-auto'>
 
-                <Image src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`}
+                <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`}
                     alt={movie.title}
                     className="rounded-lg"
                     width={500}
@@ -23,7 +23,7 @@ async function MoviePage({ params }) {
                         height: '100%',
                     }}
                 >
-                </Image>
+                </img>
 
                 <div className='movie-info p-2 content-center space-y-2 '>
                     <div className='md:flex items-center justify-between'>
